@@ -8,11 +8,10 @@ on:
 
 jobs:
   draw:
-    uses: ./draw-qmk.yml
+    uses: .github/workflows/draw-qmk.yml@main
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
-      #TODO: adjust pattern
       keymap_patterns: "keyboards/**/keymaps/*/keymap.c"        # path to the keymaps to parse
       config_path: "keymap_drawer.config.yaml"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
