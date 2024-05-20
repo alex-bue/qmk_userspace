@@ -38,7 +38,7 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: {"MO(_NAVIGATION)": "NAV", "LT(_LOWER, KC_BSPC)": {t: BSPC, h: LOWER}, "LT(_RAISE, KC_ENTER)": {t: ENT, h: RAISE}, "LT(_NAVIGATION, KC_SPC)": {t: SPC, h: NAV}}
+  raw_binding_map: {"MO(_NAVIGATION)": "NAVI", "LT(_LOWER, KC_BSPC)": {t: BSPC, h: LOWER}, "LT(_RAISE, KC_ENTER)": {t: ENT, h: RAISE}, "LT(_NAVIGATION, KC_SPC)": {t: SPC, h: NAV}}
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
