@@ -178,7 +178,7 @@ jobs:
               echo "INFO:   got extra draw args: $draw_args"
 
               qmk c2json -kb "$keyboard" -km "$keymap" > "${{ inputs.output_folder }}/$keyboard_$keymap.json" \
-              && keymap "${config_arg[@]}" parse -z "${{ inputs.output_folder }}/$keyboard_$keymap.json" $parse_args >"${{ inputs.output_folder }}/$keyboard_$keymap.yaml" \
+              && keymap "${config_arg[@]}" parse -q "${{ inputs.output_folder }}/$keyboard_$keymap.json" $parse_args >"${{ inputs.output_folder }}/$keyboard_$keymap.yaml" \
               && keymap "${config_arg[@]}" draw "${{ inputs.output_folder }}/$keyboard_$keymap.yaml" $draw_args >"${{ inputs.output_folder }}/$keyboard_$keymap.svg" \
               || {
                   echo "ERROR: parsing or drawing failed for $keyboard/$keymap!"
