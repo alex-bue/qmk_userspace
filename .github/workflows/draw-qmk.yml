@@ -165,7 +165,9 @@ jobs:
           [ -e "$config_path" ] && config_arg=(-c "$config_path") || config_arg=()
           echo "INFO: using config args: ${config_arg[@]}"
 
-          for keymap_file in ${{ inputs.keymap_patterns }}; do
+          # Use find to locate the keymap files
+          keymap_files=$(find keyboards -type f -name 'keymap.c')
+          for keymap_file in $keymap_files; do
               keyboard=$(echo "$keymap_file" | sed -E 's|keyboards/(.*)/keymaps.*|\1|')
               keymap=$(basename $(dirname "$keymap_file"))
               echo "INFO: drawing for $keyboard/$keymap"
@@ -174,12 +176,6 @@ jobs:
               echo "INFO:   got extra parse args: $parse_args"
               draw_args=$(get_args "${{ inputs.draw_args }}" "$keyboard")
               echo "INFO:   got extra draw args: $draw_args"
-
-              # json_path="${{ inputs.json_path }}"
-              # if [ -f "$json_path/${keyboard}.json" ]; then
-              #     echo "INFO:   found $json_path/${keyboard}.json";
-              #     draw_args+=" -j $json_path/${keyboard}.json"
-              # fi
 
               qmk c2json -kb "$keyboard" -km "$keymap" > "${{ inputs.output_folder }}/$keyboard_$keymap.json" \
               && keymap "${config_arg[@]}" parse -z "${{ inputs.output_folder }}/$keyboard_$keymap.json" $parse_args >"${{ inputs.output_folder }}/$keyboard_$keymap.yaml" \
@@ -194,7 +190,7 @@ jobs:
           echo "DRAWINGS=[${DRAWINGS[*]}]" >> $GITHUB_OUTPUT
           unset IFS
 
-          if [ "${{ inputs.fail_on_error }}" == "true" ] && [ $error_occurred -eq 1 ]; then
+          if [ "${{ inputs.fail_on_error }}" == "true" ] && [ $error_occurred -eq 1; then
               exit 1
           fi
 
