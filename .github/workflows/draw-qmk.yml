@@ -170,7 +170,7 @@ jobs:
           for keymap_file in $keymap_files; do
               keyboard=$(echo "$keymap_file" | sed -E 's|keyboards/(.*)/keymaps.*|\1|')
               keymap=$(basename $(dirname "$keymap_file"))
-              echo "INFO: drawing for $keyboard/$keymap"
+              echo "INFO: drawing for keyboard: $keyboard kyemap: $keymap"
 
               parse_args=$(get_args "${{ inputs.parse_args }}" "$keyboard")
               echo "INFO:   got extra parse args: $parse_args"
