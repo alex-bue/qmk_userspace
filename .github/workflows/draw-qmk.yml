@@ -177,11 +177,11 @@ jobs:
               draw_args=$(get_args "${{ inputs.draw_args }}" "$keyboard")
               echo "INFO:   got extra draw args: $draw_args"
 
-              qmk c2json -kb "$keyboard" -km "$keymap" > "${{ inputs.output_folder }}/$keyboard_$keymap.json" \
-              && keymap "${config_arg[@]}" parse -q "${{ inputs.output_folder }}/$keyboard_$keymap.json" $parse_args >"${{ inputs.output_folder }}/$keyboard_$keymap.yaml" \
-              && keymap "${config_arg[@]}" draw "${{ inputs.output_folder }}/$keyboard_$keymap.yaml" $draw_args >"${{ inputs.output_folder }}/$keyboard_$keymap.svg" \
+              qmk c2json -kb "$keyboard" -km "$keymap" > "${{ inputs.output_folder }}/${keyboard}_${keymap}.json" \
+              && keymap "${config_arg[@]}" parse -q "${{ inputs.output_folder }}/${keyboard}_${keymap}.json" $parse_args >"${{ inputs.output_folder }}/${keyboard}_${keymap}.yaml" \
+              && keymap "${config_arg[@]}" draw "${{ inputs.output_folder }}/${keyboard}_${keymap}.yaml" $draw_args >"${{ inputs.output_folder }}/${keyboard}_${keymap}.svg" \
               || {
-                  echo "ERROR: parsing or drawing failed for $keyboard/$keymap!"
+                  echo "ERROR: parsing or drawing failed for keyboard: $keyboard with keymap: $keymap!"
                   error_occurred=1
               }
               DRAWINGS+=(\"${{ inputs.output_folder }}/$keyboard_$keymap.yaml\" \"${{ inputs.output_folder }}/$keyboard_$keymap.svg\")
