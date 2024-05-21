@@ -2,7 +2,7 @@ layout: {qmk_keyboard: planck/ez/glow, qmk_layout: LAYOUT_ortho_4x12}
 layers:
   BASE:
   - TAB
-  - Q
+  - W
   - W
   - E
   - R
@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - SC SENT
-  - NAVIGATION
+  - NAV
   - LCTL
   - LALT
   - LGUI
@@ -48,7 +48,7 @@ layers:
   - RGUI
   - RALT
   - RCTL
-  - NAVIGATION
+  - NAV
   NAV:
   - '~'
   - '!'
