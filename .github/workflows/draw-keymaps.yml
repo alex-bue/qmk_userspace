@@ -9,7 +9,7 @@ on:
 
 jobs:
   draw:
-    uses: ./.github/workflow/draw-qmk.yml
+    uses: ./.github/workflows/draw-qmk.yml
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
