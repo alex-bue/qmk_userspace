@@ -193,7 +193,7 @@ jobs:
           echo "DRAWINGS=[${DRAWINGS[*]}]" >> $GITHUB_OUTPUT
           unset IFS
 
-          if [ "${{ inputs.fail_on_error }}" == "true" ] && [ $error_occurred -eq 1; then
+          if [ "${{ inputs.fail_on_error }}" == "true" ] && [ $error_occurred -eq 1 ]; then
               exit 1
           fi
 
