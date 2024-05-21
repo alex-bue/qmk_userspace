@@ -172,19 +172,22 @@ jobs:
               keymap=$(basename $(dirname "$keymap_file"))
               echo "INFO: drawing for keyboard: $keyboard keymap: $keymap"
 
+              # Replace slashes with underscores in keyboard name for filenames
+              safe_keyboard=$(echo "$keyboard" | tr '/' '_')
+
               parse_args=$(get_args "${{ inputs.parse_args }}" "$keyboard")
               echo "INFO:   got extra parse args: $parse_args"
               draw_args=$(get_args "${{ inputs.draw_args }}" "$keyboard")
               echo "INFO:   got extra draw args: $draw_args"
 
-              qmk c2json -kb "$keyboard" -km "$keymap" > "${{ inputs.output_folder }}/${keyboard}_${keymap}.json" \
-              && keymap "${config_arg[@]}" parse -q "${{ inputs.output_folder }}/${keyboard}_${keymap}.json" $parse_args >"${{ inputs.output_folder }}/${keyboard}_${keymap}.yaml" \
-              && keymap "${config_arg[@]}" draw "${{ inputs.output_folder }}/${keyboard}_${keymap}.yaml" $draw_args >"${{ inputs.output_folder }}/${keyboard}_${keymap}.svg" \
+              qmk c2json -kb "$keyboard" -km "$keymap" | \
+              keymap "${config_arg[@]}" parse -q - $parse_args >"${{ inputs.output_folder }}/${safe_keyboard}_${keymap}.yaml" \
+              && keymap "${config_arg[@]}" draw "${{ inputs.output_folder }}/${safe_keyboard}_${keymap}.yaml" $draw_args >"${{ inputs.output_folder }}/${safe_keyboard}_${keymap}.svg" \
               || {
-                  echo "ERROR: parsing or drawing failed for keyboard: $keyboard with keymap: $keymap!"
+                  echo "ERROR: parsing or drawing failed for keyboard: $keyboard with keymap: $keymap"
                   error_occurred=1
               }
-              DRAWINGS+=(\"${{ inputs.output_folder }}/$keyboard_$keymap.yaml\" \"${{ inputs.output_folder }}/$keyboard_$keymap.svg\")
+              DRAWINGS+=(\"${{ inputs.output_folder }}/${safe_keyboard}_$keymap.yaml\" \"${{ inputs.output_folder }}/${safe_keyboard}_$keymap.svg\")
           done
           IFS=','
           echo "DRAWINGS=[${DRAWINGS[*]}]" >> $GITHUB_OUTPUT
