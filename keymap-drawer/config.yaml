@@ -35,19 +35,15 @@ draw_config:
   glyph_hold_size: 12
   glyph_shifted_size: 10
   glyphs: {}
+
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map:
-    "MO(_NAVIGATION)": "NAV"
-    "LT(_LOWER, KC_BSPC)": {t: BSPC, h: LOWER}
-    "LT(_RAISE, KC_ENTER)": {t: ENT, h: RAISE}
-    "LT(_NAVIGATION, KC_SPC)": {t: SPC, h: NAV}
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
   trans_legend:
-    t: ▽
+    tap: $$mdi:chevron-down$$
     type: trans
   mark_alternate_layer_activators: false
   modifier_fn_map:
@@ -64,6 +60,20 @@ parse_config:
     special_combinations:
       left_ctrl+left_alt+left_gui+left_shift: Hyper
       left_ctrl+left_alt+left_shift: Meh
+
+  raw_binding_map:
+    "MO(_NAVIGATION)": "NAV"
+    "LT(_LOWER, KC_BSPC)":
+      tap: $$mdi:backspace$$
+      hold: LOWER
+    "LT(_RAISE, KC_ENTER)":
+      tap: ENT
+      hold: RAISE
+    "LT(_NAVIGATION, KC_SPC)":
+      tap: SPC
+      type: space
+      h: NAV
+
   qmk_remove_keycode_prefix:
   - KC_
 
@@ -96,7 +106,9 @@ parse_config:
     ESC: $$mdi:keyboard-esc$$
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
-    SPC: $$mdi:keyboard-space$$
+    SPC:
+      type: space
+      tap:  $$mdi:keyboard-space$$
     BACKSPACE:
       type: backspace
       tap: $$mdi:backspace$$
