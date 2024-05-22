@@ -1,4 +1,4 @@
-<svg width="960" height="1600" viewBox="0 0 960 1600" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1020" height="1936" viewBox="0 0 1020 1936" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
 <svg id="mdi:apple-keyboard-command">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
@@ -215,12 +215,6 @@ svg.keymap {
     --color--none--text--shifted: var(--color--trans--text--shifted);
     --color--none--text--hold: var(--color--trans--text--hold);
 
-    --color--ghost--bg: var(--color--trans--bg);
-    --color--ghost--border: var(--color--trans--border);
-    --color--ghost--text--tap: var(--color--trans--text--tap);
-    --color--ghost--text--shifted: var(--color--trans--text--shifted);
-    --color--ghost--text--hold: var(--color--trans--text--shifted);
-
     /*
      * ====================
      * /End Theme Variables
@@ -228,7 +222,7 @@ svg.keymap {
      */
 
     font-family: REM,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    font-size: 24px;
+    font-size: 22px;
     font-kerning: normal;
     text-rendering: optimizeLegibility;
     fill: var(--color--text);
@@ -316,37 +310,6 @@ path.combo {
 }
 
 /*
- * Transparent, None, and Ghost Keys
- */
-.trans,
-.none,
-.ghost {
-  opacity: 0.4;
-}
-.trans {
-    --color--key--bg: var(--color--trans--bg);
-    --color--key--border: var(--color--trans--border);
-    --color--key--text--tap: var(--color--trans--text--tap);
-    --color--key--text--shifted: var(--color--trans--text--shifted);
-    --color--key--text--hold: var(--color--trans--text--hold);
-}
-.none {
-    --color--key--bg: var(--color--none--bg);
-    --color--key--border: var(--color--none--border);
-    --color--key--text--tap: var(--color--none--text--tap);
-    --color--key--text--shifted: var(--color--none--text--shifted);
-    --color--key--text--hold: var(--color--none--text--hold);
-}
-.ghost {
-    --color--key--bg: var(--color--ghost--bg);
-    --color--key--border: var(--color--ghost--border);
-    --color--key--text--tap: var(--color--ghost--text--tap);
-    --color--key--text--shifted: var(--color--ghost--text--shifted);
-    --color--key--text--hold: var(--color--ghost--text--hold);
-}
-
-
-/*
  * Overrides
  */
 .shifted.mdi\:alpha-w-box {
@@ -370,27 +333,30 @@ path.combo {
 .keypos-37,
 .keypos-38,
 .keypos-39,
-.keypos-40,
-.keypos-41 {
+/* .keypos-40, */
+/* .keypos-41, */
+/* .keypos-42, */
+/* .keypos-43, */
+/* .keypos-44, */
+.keypos-45,
+.keypos-46,
+.keypos-47,
+.keypos-44 {
     --color--key--bg: var(--color--material--blue-gray--100);
     --color--key--border: var(--color--material--blue-gray--50);
 }
 
+.keypos-35,
 .keypos-12 {
     --color--key--bg: var(--color--material--red--300);
     --color--key--border: var(--color--material--red--200);
     --color--key--text--shifted: var(--color--key--text--tap);
     --color--key--text--hold: var(--color--key--text--tap);
 }
-
-.keypos-23 {
-    --color--key--bg: var(--color--material--teal--200);
-    --color--key--border: var(--color--material--teal--100);
-}
 </style>
-<g transform="translate(0, 0)" class="layer-BASE">
-<text x="0" y="0" class="label">BASE:</text>
-<g transform="translate(0, 0)">
+<g transform="translate(30, 0)" class="layer-BASE">
+<text x="0" y="28" class="label">BASE:</text>
+<g transform="translate(0, 56)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-tab"/>
@@ -442,7 +408,7 @@ path.combo {
 <g transform="translate(40, 120)" class="key keypos-12">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-esc"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-9" y="18" height="18" width="18.0" class="key hold glyph mdi:apple-keyboard-control"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(120, 120)" class="key keypos-13">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -483,12 +449,12 @@ path.combo {
 <g transform="translate(840, 120)" class="key keypos-22">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">;</text>
-<text x="0" y="-36" class="key shifted">:</text>
+<text x="0" y="-34" class="key shifted">:</text>
 </g>
 <g transform="translate(920, 120)" class="key keypos-23">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">&#x27;</text>
-<text x="0" y="-36" class="key shifted">&quot;</text>
+<text x="0" y="-34" class="key shifted">&quot;</text>
 </g>
 <g transform="translate(40, 200)" class="key keypos-24">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -525,22 +491,22 @@ path.combo {
 <g transform="translate(680, 200)" class="key keypos-32">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">,</text>
-<text x="0" y="-36" class="key shifted">&lt;</text>
+<text x="0" y="-34" class="key shifted">&lt;</text>
 </g>
 <g transform="translate(760, 200)" class="key keypos-33">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">.</text>
-<text x="0" y="-36" class="key shifted">&gt;</text>
+<text x="0" y="-34" class="key shifted">&gt;</text>
 </g>
 <g transform="translate(840, 200)" class="key keypos-34">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">/</text>
-<text x="0" y="-36" class="key shifted">?</text>
+<text x="0" y="-34" class="key shifted">?</text>
 </g>
 <g transform="translate(920, 200)" class="key keypos-35">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-return"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="18" height="18" width="18.0" class="key hold glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(40, 280)" class="key keypos-36">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -561,22 +527,22 @@ path.combo {
 <g transform="translate(360, 280)" class="key keypos-40">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:backspace"/>
-<text x="0" y="36" class="key hold">LOWER</text>
+<text x="0" y="34" class="key hold">LOWER</text>
 </g>
 <g transform="translate(440, 280)" class="key keypos-41">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="36" class="key hold">NAV</text>
+<text x="0" y="34" class="key hold">NAV</text>
 </g>
 <g transform="translate(520, 280)" class="key keypos-42">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="36" class="key hold">NAV</text>
+<text x="0" y="34" class="key hold">NAV</text>
 </g>
 <g transform="translate(600, 280)" class="key keypos-43">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:keyboard-return"/>
-<text x="0" y="36" class="key hold">RAISE</text>
+<text x="0" y="34" class="key hold">RAISE</text>
 </g>
 <g transform="translate(680, 280)" class="key keypos-44">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -596,9 +562,9 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(0, 320)" class="layer-RAISE">
-<text x="0" y="0" class="label">RAISE:</text>
-<g transform="translate(0, 0)">
+<g transform="translate(30, 376)" class="layer-RAISE">
+<text x="0" y="28" class="label">RAISE:</text>
+<g transform="translate(0, 56)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">~</text>
@@ -682,17 +648,17 @@ path.combo {
 <g transform="translate(680, 120)" class="key keypos-20">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">=</text>
-<text x="0" y="-36" class="key shifted">+</text>
+<text x="0" y="-34" class="key shifted">+</text>
 </g>
 <g transform="translate(760, 120)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">[</text>
-<text x="0" y="-36" class="key shifted">{</text>
+<text x="0" y="-34" class="key shifted">{</text>
 </g>
 <g transform="translate(840, 120)" class="key keypos-22">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">]</text>
-<text x="0" y="-36" class="key shifted">}</text>
+<text x="0" y="-34" class="key shifted">}</text>
 </g>
 <g transform="translate(920, 120)" class="key keypos-23">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
@@ -796,9 +762,9 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(0, 640)" class="layer-LOWER">
-<text x="0" y="0" class="label">LOWER:</text>
-<g transform="translate(0, 0)">
+<g transform="translate(30, 752)" class="layer-LOWER">
+<text x="0" y="28" class="label">LOWER:</text>
+<g transform="translate(0, 56)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <text x="0" y="0" class="key tap">`</text>
@@ -993,9 +959,9 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(0, 960)" class="layer-NAV">
-<text x="0" y="0" class="label">NAV:</text>
-<g transform="translate(0, 0)">
+<g transform="translate(30, 1128)" class="layer-NAV">
+<text x="0" y="28" class="label">NAV:</text>
+<g transform="translate(0, 56)">
 <g transform="translate(40, 40)" class="key trans keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
@@ -1210,9 +1176,9 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(0, 1280)" class="layer-ADJUST">
-<text x="0" y="0" class="label">ADJUST:</text>
-<g transform="translate(0, 0)">
+<g transform="translate(30, 1504)" class="layer-ADJUST">
+<text x="0" y="28" class="label">ADJUST:</text>
+<g transform="translate(0, 56)">
 <g transform="translate(40, 40)" class="key keypos-0">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 </g>
