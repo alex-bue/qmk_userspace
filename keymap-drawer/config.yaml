@@ -4,9 +4,11 @@ draw_config:
 
   # split_gap: 30.0
 
+  # combo box dimensions
   combo_w: 36.0
   combo_h: 36.0
 
+  # key border radius
   key_rx: 4
   key_ry: 4
 
@@ -15,16 +17,20 @@ draw_config:
   separate_combo_diagrams: false
   combo_diagrams_scale: 2
 
+  # padding from the edge of cap to top and bottom legends
+  small_pad: 4
+
+  # padding between keys
   inner_pad_w: 1.5
   inner_pad_h: 1.5
 
-  outer_pad_w: 0
-  outer_pad_h: 0
+  # padding between layers
+  outer_pad_w: 30.0
+  outer_pad_h: 56.00
 
   line_spacing: 1.2
   # arc_radius: 6.0
   # append_colon_to_layer_header: true
-  # small_pad: 2.0
 
   legend_rel_x: 0.0
   legend_rel_y: 0.0
@@ -219,12 +225,6 @@ draw_config:
         --color--none--text--shifted: var(--color--trans--text--shifted);
         --color--none--text--hold: var(--color--trans--text--hold);
 
-        --color--ghost--bg: var(--color--trans--bg);
-        --color--ghost--border: var(--color--trans--border);
-        --color--ghost--text--tap: var(--color--trans--text--tap);
-        --color--ghost--text--shifted: var(--color--trans--text--shifted);
-        --color--ghost--text--hold: var(--color--trans--text--shifted);
-
         /*
          * ====================
          * /End Theme Variables
@@ -232,7 +232,7 @@ draw_config:
          */
 
         font-family: REM,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-        font-size: 24px;
+        font-size: 22px;
         font-kerning: normal;
         text-rendering: optimizeLegibility;
         fill: var(--color--text);
@@ -320,37 +320,6 @@ draw_config:
     }
 
     /*
-     * Transparent, None, and Ghost Keys
-     */
-    .trans,
-    .none,
-    .ghost {
-      opacity: 0.4;
-    }
-    .trans {
-        --color--key--bg: var(--color--trans--bg);
-        --color--key--border: var(--color--trans--border);
-        --color--key--text--tap: var(--color--trans--text--tap);
-        --color--key--text--shifted: var(--color--trans--text--shifted);
-        --color--key--text--hold: var(--color--trans--text--hold);
-    }
-    .none {
-        --color--key--bg: var(--color--none--bg);
-        --color--key--border: var(--color--none--border);
-        --color--key--text--tap: var(--color--none--text--tap);
-        --color--key--text--shifted: var(--color--none--text--shifted);
-        --color--key--text--hold: var(--color--none--text--hold);
-    }
-    .ghost {
-        --color--key--bg: var(--color--ghost--bg);
-        --color--key--border: var(--color--ghost--border);
-        --color--key--text--tap: var(--color--ghost--text--tap);
-        --color--key--text--shifted: var(--color--ghost--text--shifted);
-        --color--key--text--hold: var(--color--ghost--text--hold);
-    }
-
-
-    /*
      * Overrides
      */
     .shifted.mdi\:alpha-w-box {
@@ -374,22 +343,25 @@ draw_config:
     .keypos-37,
     .keypos-38,
     .keypos-39,
-    .keypos-40,
-    .keypos-41 {
+    /* .keypos-40, */
+    /* .keypos-41, */
+    /* .keypos-42, */
+    /* .keypos-43, */
+    /* .keypos-44, */
+    .keypos-45,
+    .keypos-46,
+    .keypos-47,
+    .keypos-44 {
         --color--key--bg: var(--color--material--blue-gray--100);
         --color--key--border: var(--color--material--blue-gray--50);
     }
 
+    .keypos-35,
     .keypos-12 {
         --color--key--bg: var(--color--material--red--300);
         --color--key--border: var(--color--material--red--200);
         --color--key--text--shifted: var(--color--key--text--tap);
         --color--key--text--hold: var(--color--key--text--tap);
-    }
-
-    .keypos-23 {
-        --color--key--bg: var(--color--material--teal--200);
-        --color--key--border: var(--color--material--teal--100);
     }
 
 parse_config:
