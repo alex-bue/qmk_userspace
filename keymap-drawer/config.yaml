@@ -59,8 +59,8 @@ parse_config:
       tap: $$mdi:keyboard-space$$
       hold: NAV
     "LCTL_T(KC_ESC)":
-      tap: $$mdi:keyboard-esc
-      hold: $$mdi:apple-keyboard-control
+      tap: $$mdi:keyboard-esc$$
+      hold: $$mdi:apple-keyboard-control$$
 
 
   qmk_remove_keycode_prefix:
@@ -115,7 +115,7 @@ parse_config:
 
     # Space cadets
     SENT:
-      tap: $$mdi:keyboard-esc$$
+      tap: $$mdi:keyboard-return$$
       hold: $$mdi:apple-keyboard-shift$$
 
     XXXXXXX: ''
