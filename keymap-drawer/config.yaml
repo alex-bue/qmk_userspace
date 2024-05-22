@@ -33,7 +33,7 @@ draw_config:
   shrink_wide_legends: 7
   glyph_tap_size: 14
   glyph_hold_size: 12
-  glyph_shifted_size: 10
+  glyph_shifted_size: 14
   glyphs: {}
 
 parse_config:
@@ -58,6 +58,10 @@ parse_config:
     "LT(_NAVIGATION, KC_SPC)":
       tap: $$mdi:keyboard-space$$
       hold: NAV
+    "LCTL_T(KC_ESC)":
+      tap: $$mdi:keyboard-esc
+      hold: $$mdi:apple-keyboard-control
+
 
   qmk_remove_keycode_prefix:
   - KC_
@@ -127,22 +131,40 @@ parse_config:
       tap: "="
       shifted: "+"
     LEFT_BRACKET: '['
-    LBRC: '['
+    LBRC:
+      tap: "["
+      shifted: "{"
     RIGHT_BRACKET: ']'
-    RBRC: ']'
+    RBRC:
+      tap: "]"
+      shifted: "}"
     BACKSLASH: \
+    BLSH:
+      tap: '\'
+      shifted: "|"
     BSLS: \
     NONUS_HASH: '#'
     NUHS: '#'
     SEMICOLON: ;
-    SCLN: ;
+    SEMI:
+      tap: ";"
+      shifted: ":"
+    SCLN:
+      tap: ";"
+      shifted: ":"
     QUOTE: ''''
-    QUOT: ''''
+    QUOT:
+      tap: "'"
+      shifted: '"'
     GRAVE: '`'
     GRV: '`'
     COMMA: ','
-    COMM: ','
-    DOT: .
+    COMM:
+      tap: ","
+      shifted: "<"
+    DOT:
+      tap: "."
+      shifted: ">"
     SLASH:
       tap: "/"
       shifted: "?"
@@ -190,94 +212,94 @@ parse_config:
     GT: '>'
     QUESTION: '?'
     QUES: '?'
-  zmk_remove_keycode_prefix: ['AG']
-  zmk_keycode_map:
-    EXCLAMATION: '!'
-    EXCL: '!'
-    AT_SIGN: '@'
-    AT: '@'
-    HASH: '#'
-    POUND: '#'
-    DOLLAR: $
-    DLLR: $
-    PERCENT: '%'
-    PRCNT: '%'
-    CARET: ^
-    AMPERSAND: '&'
-    AMPS: '&'
-    ASTERISK: '*'
-    ASTRK: '*'
-    STAR: '*'
-    LEFT_PARENTHESIS: (
-    LPAR: (
-    RIGHT_PARENTHESIS: )
-    RPAR: )
-    EQUAL: '='
-    PLUS: +
-    MINUS: '-'
-    UNDERSCORE: _
-    UNDER: _
-    SLASH: /
-    FSLH: /
-    QUESTION: '?'
-    QMARK: '?'
-    BACKSLASH:
-      tap: '\'
-      shifted: "|"
-    BLSH:
-      tap: '\'
-      shifted: "|"
-    PIPE: '|'
-    NON_US_BACKSLASH: \
-    PIPE2: '|'
-    NON_US_BSLH: '|'
-    SEMICOLON:
-      tap: ";"
-      shifted: ":"
-    SCLN:
-      tap: ";"
-      shifted: ":"
-    SEMI:
-      tap: ";"
-      shifted: ":"
-    COLON: ':'
-    QUOT:
-      tap: "'"
-      shifted: '"'
-    SINGLE_QUOTE:
-      tap: "'"
-      shifted: '"'
-    SQT: ''''
-    APOSTROPHE: ''''
-    APOS: ''''
-    DOUBLE_QUOTES: '"'
-    DQT: '"'
-    COMMA:
-      tap: ","
-      shifted: "<"
-    LESS_THAN: <
-    LT: <
-    PERIOD: .
-    DOT:
-      tap: "."
-      shifted: "<"
-    GREATER_THAN: '>'
-    GT: '>'
-    LEFT_BRACKET: '['
-    LBKT: '['
-    LEFT_BRACE: '{'
-    LBRC:
-      tap: "["
-      shifted: "{"
-    RIGHT_BRACKET: ']'
-    RBKT: ']'
-    RIGHT_BRACE: '}'
-    RBRC:
-      tap: "]"
-      shifted: "}"
-    GRAVE: '`'
-    TILDE: '~'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    TILDE2: '~'
-  zmk_combos: {}
+  # zmk_remove_keycode_prefix: ['AG']
+  # zmk_keycode_map:
+  #   EXCLAMATION: '!'
+  #   EXCL: '!'
+  #   AT_SIGN: '@'
+  #   AT: '@'
+  #   HASH: '#'
+  #   POUND: '#'
+  #   DOLLAR: $
+  #   DLLR: $
+  #   PERCENT: '%'
+  #   PRCNT: '%'
+  #   CARET: ^
+  #   AMPERSAND: '&'
+  #   AMPS: '&'
+  #   ASTERISK: '*'
+  #   ASTRK: '*'
+  #   STAR: '*'
+  #   LEFT_PARENTHESIS: (
+  #   LPAR: (
+  #   RIGHT_PARENTHESIS: )
+  #   RPAR: )
+  #   EQUAL: '='
+  #   PLUS: +
+  #   MINUS: '-'
+  #   UNDERSCORE: _
+  #   UNDER: _
+  #   SLASH: /
+  #   FSLH: /
+  #   QUESTION: '?'
+  #   QMARK: '?'
+  #   BACKSLASH:
+  #     tap: '\'
+  #     shifted: "|"
+  #   BLSH:
+  #     tap: '\'
+  #     shifted: "|"
+  #   PIPE: '|'
+  #   NON_US_BACKSLASH: \
+  #   PIPE2: '|'
+  #   NON_US_BSLH: '|'
+  #   SEMICOLON:
+  #     tap: ";"
+  #     shifted: ":"
+  #   SCLN:
+  #     tap: ";"
+  #     shifted: ":"
+  #   SEMI:
+  #     tap: ";"
+  #     shifted: ":"
+  #   COLON: ':'
+  #   QUOT:
+  #     tap: "'"
+  #     shifted: '"'
+  #   SINGLE_QUOTE:
+  #     tap: "'"
+  #     shifted: '"'
+  #   SQT: ''''
+  #   APOSTROPHE: ''''
+  #   APOS: ''''
+  #   DOUBLE_QUOTES: '"'
+  #   DQT: '"'
+  #   COMMA:
+  #     tap: ","
+  #     shifted: "<"
+  #   LESS_THAN: <
+  #   LT: <
+  #   PERIOD: .
+  #   DOT:
+  #     tap: "."
+  #     shifted: "<"
+  #   GREATER_THAN: '>'
+  #   GT: '>'
+  #   LEFT_BRACKET: '['
+  #   LBKT: '['
+  #   LEFT_BRACE: '{'
+  #   LBRC:
+  #     tap: "["
+  #     shifted: "{"
+  #   RIGHT_BRACKET: ']'
+  #   RBKT: ']'
+  #   RIGHT_BRACE: '}'
+  #   RBRC:
+  #     tap: "]"
+  #     shifted: "}"
+  #   GRAVE: '`'
+  #   TILDE: '~'
+  #   NON_US_HASH: '#'
+  #   NUHS: '#'
+  #   TILDE2: '~'
+  # zmk_combos: {}
