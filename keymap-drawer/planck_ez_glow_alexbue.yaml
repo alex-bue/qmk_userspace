@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: planck/ez/glow, qmk_layout: LAYOUT_ortho_4x12}
 layers:
   BASE:
-  - TAB
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
-  - BSPC
-  - {t: ESC, h: LCTL}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-esc$$', h: LCTL}
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - LSFT
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -35,18 +35,18 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, s: '?'}
   - SC SENT
   - NAV
   - LCTL
-  - LALT
-  - LGUI
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: BSPC, h: LOWER}
   - {t: SPC, h: NAV}
   - {t: SPC, h: NAV}
   - {t: ENT, h: RAISE}
-  - RGUI
-  - RALT
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - RCTL
   - NAV
   RAISE:
@@ -70,7 +70,7 @@ layers:
   - F5
   - F6
   - '-'
-  - '='
+  - {t: '=', s: +}
   - '['
   - ']'
   - \
@@ -159,17 +159,17 @@ layers:
   - Alt+ 8
   - Alt+ 9
   - Alt+ 0
-  - DEL
+  - $$mdi:backspace-reverse-outline$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PGDN
   - PGUP
-  - LEFT
-  - DOWN
-  - UP
-  - RGHT
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - MPLY
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
