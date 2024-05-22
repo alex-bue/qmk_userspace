@@ -44,7 +44,7 @@ parse_config:
   tap_toggle_label: tap-toggle
   mark_alternate_layer_activators: false
   trans_legend:
-    tap: $$mdi:chevron-down$$
+    tap: ▽
     type: trans
 
   raw_binding_map:
