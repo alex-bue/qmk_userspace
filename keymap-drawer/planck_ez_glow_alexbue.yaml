@@ -36,18 +36,18 @@ layers:
   - ','
   - .
   - {t: /, s: '?'}
-  - SC SENT
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - NAV
-  - LCTL
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:backspace$$', h: LOWER}
-  - {t: SPC, h: NAV, type: space}
-  - {t: SPC, h: NAV, type: space}
-  - {t: ENT, h: RAISE}
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - {t: '$$mdi:keyboard-return$$', h: RAISE}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - RCTL
+  - $$mdi:apple-keyboard-control$$
   - NAV
   RAISE:
   - '~'
