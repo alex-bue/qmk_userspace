@@ -21,8 +21,8 @@ draw_config:
   small_pad: 4
 
   # padding between keys
-  inner_pad_w: 1.5
-  inner_pad_h: 1.5
+  inner_pad_w: 2
+  inner_pad_h: 2
 
   # padding between layers
   outer_pad_w: 30.0
@@ -256,7 +256,7 @@ draw_config:
 
     /* Layer labels */
     text.label {
-        font-weight: bold;
+        font-size: 18;
         text-anchor: start;
         paint-order: stroke;
         fill: var(--color--layer--text);
