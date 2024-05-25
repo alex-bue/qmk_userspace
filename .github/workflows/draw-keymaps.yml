@@ -16,6 +16,6 @@ jobs:
       keymap_patterns: "keyboards/**/keymaps/*/keymap.c"        # path to the keymaps to parse
       config_path: "keymap-drawer/config.yaml"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
-      parse_args: "planck/ez/glow:'-l BASE RAISE LOWER NAV ADJUST'"  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
+      parse_args: "planck/ez/glow:'-l BASE NAVIGATION RAISE LOWER FN ADJUST'"  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
       fail_on_error: true

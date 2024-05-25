@@ -376,14 +376,14 @@ parse_config:
     type: trans
 
   raw_binding_map:
-    "MO(_NAVIGATION)": "NAV"
-    "LT(_LOWER, KC_BSPC)":
+    "NAV": "NAV"
+    "LOWER":
       tap: $$mdi:backspace$$
       hold: LOWER
-    "LT(_RAISE, KC_ENTER)":
+    "RAISE":
       tap: $$mdi:keyboard-return$$
       hold: RAISE
-    "LT(_NAVIGATION, KC_SPC)":
+    "NAVSPC":
       tap: $$mdi:keyboard-space$$
       hold: NAV
     "LCTL_T(KC_ESC)":

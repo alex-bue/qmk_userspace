@@ -180,7 +180,7 @@ jobs:
               draw_args=$(get_args "${{ inputs.draw_args }}" "$keyboard")
               echo "INFO:   got extra draw args: $draw_args"
 
-              qmk c2json -kb "$keyboard" -km "$keymap" | \
+              qmk c2json -kb "$keyboard" -km "$keymap" --no-cpp | \
               keymap "${config_arg[@]}" parse -q - $parse_args >"${{ inputs.output_folder }}/${safe_keyboard}_${keymap}.yaml" \
               && keymap "${config_arg[@]}" draw "${{ inputs.output_folder }}/${safe_keyboard}_${keymap}.yaml" $draw_args >"${{ inputs.output_folder }}/${safe_keyboard}_${keymap}.svg" \
               || {
