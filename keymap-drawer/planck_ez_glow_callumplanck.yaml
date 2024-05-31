@@ -1,0 +1,198 @@
+layout: {qmk_keyboard: planck/ez/glow, qmk_layout: LAYOUT_ortho_4x12}
+layers:
+  L0:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - ''
+  - ''
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - HOME A
+  - HOME S
+  - HOME D
+  - HOME F
+  - G
+  - ''
+  - ''
+  - H
+  - HOME J
+  - HOME K
+  - HOME L
+  - HOME SCLN
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - ''
+  - ''
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - ''
+  - ''
+  - ''
+  - LT(LA NAV, BSPC)
+  - {t: '$$mdi:keyboard-esc$$', h: LSFT}
+  - ''
+  - ''
+  - LT(LA SYM, ENT)
+  - LT(LA SYM, SPC)
+  - ''
+  - ''
+  - ''
+  L1:
+  - $$mdi:keyboard-tab$$
+  - {t: '[', s: '{'}
+  - '{'
+  - (
+  - '~'
+  - ''
+  - ''
+  - ^
+  - )
+  - '}'
+  - {t: ']', s: '}'}
+  - '`'
+  - '-'
+  - '*'
+  - {t: '=', s: +}
+  - _
+  - $
+  - ''
+  - ''
+  - '#'
+  - OS SHFT
+  - OS CMD
+  - OS ALT
+  - {t: '''', s: '"'}
+  - +
+  - '|'
+  - '@'
+  - {t: /, s: '?'}
+  - '%'
+  - ''
+  - ''
+  - ''
+  - \
+  - '&'
+  - '?'
+  - '!'
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  L2:
+  - Alt+ 1
+  - Alt+ 2
+  - Alt+ 3
+  - Alt+ 4
+  - Alt+ 5
+  - ''
+  - ''
+  - MPRV
+  - VOLD
+  - VOLU
+  - MNXT
+  - $$mdi:backspace-reverse-outline$$
+  - OS CTRL
+  - OS ALT
+  - OS CMD
+  - OS SHFT
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - BRID
+  - BRIU
+  - MUTE
+  - ENT
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - QK BOOT
+  L3:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - ''
+  - ''
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - OS CTRL
+  - OS ALT
+  - OS CMD
+  - OS SHFT
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - OS SHFT
+  - OS CMD
+  - OS ALT
+  - OS CTRL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
