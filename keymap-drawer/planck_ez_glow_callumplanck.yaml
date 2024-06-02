@@ -50,42 +50,42 @@ layers:
   - ''
   - ''
   L1:
-  - $$mdi:keyboard-tab$$
-  - {t: '[', s: '{'}
-  - '{'
-  - (
-  - '~'
-  - ''
-  - ''
-  - ^
-  - )
-  - '}'
-  - {t: ']', s: '}'}
-  - '`'
-  - '-'
-  - '*'
-  - {t: '=', s: +}
-  - _
-  - $
-  - ''
-  - ''
-  - '#'
-  - OS SHFT
-  - OS CMD
-  - OS ALT
-  - {t: '''', s: '"'}
-  - +
-  - '|'
+  - '!'
   - '@'
-  - {t: /, s: '?'}
+  - '#'
+  - $
   - '%'
   - ''
   - ''
+  - {t: '=', s: +}
+  - '`'
+  - (
+  - )
+  - +
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
+  - ^
   - ''
+  - ''
+  - '*'
+  - ':'
+  - OS LBRC
+  - {t: ']', s: '}'}
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - \
+  - '|'
   - '&'
-  - '?'
-  - '!'
+  - ''
+  - ''
+  - '~'
+  - {t: ;, s: ':'}
+  - '{'
+  - '}'
+  - _
   - ''
   - ''
   - ''
