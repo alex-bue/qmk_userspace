@@ -41,10 +41,10 @@ layers:
   - ''
   - ''
   - LT(LA NAV, BSPC)
-  - {t: '$$mdi:keyboard-esc$$', h: LSFT}
+  - LT(LA SYM, ESC)
   - ''
   - ''
-  - LT(LA SYM, ENT)
+  - LT(LA NUM, ENT)
   - LT(LA SYM, SPC)
   - ''
   - ''
@@ -71,7 +71,7 @@ layers:
   - ''
   - '*'
   - ':'
-  - OS LBRC
+  - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - '-'
   - {t: ▽, type: trans}
@@ -111,10 +111,10 @@ layers:
   - VOLU
   - MNXT
   - $$mdi:backspace-reverse-outline$$
-  - OS CTRL
-  - OS ALT
-  - OS CMD
-  - OS SHFT
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -160,18 +160,18 @@ layers:
   - '8'
   - '9'
   - '0'
-  - OS CTRL
-  - OS ALT
-  - OS CMD
-  - OS SHFT
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - ''
   - ''
   - {t: ▽, type: trans}
-  - OS SHFT
-  - OS CMD
-  - OS ALT
-  - OS CTRL
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
