@@ -44,7 +44,6 @@ draw_config:
     rx: 4
     ry: 4
 
-  # svg_extra_style: ''
   # footer_text: ''
   shrink_wide_legends: 5
   glyph_tap_size: 26
@@ -52,7 +51,7 @@ draw_config:
   glyph_shifted_size: 18
   glyphs: {}
 
-  svg_style: |
+  svg_extra_style: |
     svg.keymap {
         font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
         font-size: 14px;
