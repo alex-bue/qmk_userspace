@@ -16,7 +16,7 @@
 #define HOME_J RSFT_T(KC_J)
 #define HOME_K RGUI_T(KC_K)
 #define HOME_L LALT_T(KC_L)
-#define HOME_SCLN RCTL_T(KC_SCLN)
+#define HOME_QUOT RCTL_T(KC_QUOT)
 
 
 enum planck_layers {
@@ -33,10 +33,10 @@ enum planck_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_BASE] = LAYOUT_ortho_4x12(
-    KC_Q,     KC_W,     KC_E,     KC_R,               KC_T,              XXXXXXX,  XXXXXXX,  KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,
-    HOME_A,   HOME_S,   HOME_D,   HOME_F,             KC_G,              XXXXXXX,  XXXXXXX,  KC_H,     HOME_J,   HOME_K,   HOME_L,   HOME_SCLN,
-    KC_Z,     KC_X,     KC_C,     KC_V,               KC_B,              XXXXXXX,  XXXXXXX,  KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,
-    XXXXXXX,  XXXXXXX,  XXXXXXX,  LT(LA_NAV, KC_BSPC), LT(LA_SYM, KC_ESC),   XXXXXXX,  XXXXXXX,  LT(LA_NUM, KC_ENT),  LT(LA_SYM, KC_SPC),  XXXXXXX,  XXXXXXX,  XXXXXXX
+    KC_Q,         KC_W,     KC_E,     KC_R,               KC_T,                 XXXXXXX,  XXXXXXX,  KC_Y,                KC_U,                KC_I,     KC_O,     KC_P,
+    HOME_A,       HOME_S,   HOME_D,   HOME_F,             KC_G,                 XXXXXXX,  XXXXXXX,  KC_H,                HOME_J,              HOME_K,   HOME_L,   HOME_QUOT,
+    RALT_T(KC_Z), KC_X,     KC_C,     KC_V,               KC_B,                 XXXXXXX,  XXXXXXX,  KC_N,                KC_M,                KC_COMM,  KC_DOT,   RALT_T(KC_SLSH),
+    XXXXXXX,      XXXXXXX,  XXXXXXX,  LT(LA_NAV, KC_TAB), LT(LA_SYM, KC_ESC),  XXXXXXX,  XXXXXXX,  LT(LA_NUM, KC_SPC),  LT(LA_NAV, KC_ENT),  XXXXXXX,  XXXXXXX,  XXXXXXX
 ),
 
 [_SYM] = LAYOUT_ortho_4x12(
@@ -47,9 +47,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_NAV] = LAYOUT_ortho_4x12(
-    LALT(KC_1),  LALT(KC_2),  LALT(KC_3),  LALT(KC_4),  LALT(KC_5),  XXXXXXX,  XXXXXXX,  KC_MPRV,  KC_VOLD,  KC_VOLU,  KC_MNXT,  KC_DEL,
-    KC_LCTL,     KC_LALT,      KC_LGUI,      KC_LSFT,     _______,     XXXXXXX,  XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_BSPC,
-    _______,     _______,     _______,     _______,     _______,     XXXXXXX,  XXXXXXX,  _______,  KC_BRID,  KC_BRIU,  KC_MUTE,  KC_ENT,
+    LALT(KC_1),  LALT(KC_2),  LALT(KC_3),  LALT(KC_4),  LALT(KC_5),  XXXXXXX,  XXXXXXX,  KC_MPRV,  KC_VOLD,  KC_VOLU,  KC_MNXT,  KC_MUTE,
+    KC_LCTL,     KC_LALT,      KC_LGUI,      KC_LSFT,     _______,     XXXXXXX,  XXXXXXX,  KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_MPLY,
+    _______,     _______,     _______,     _______,     _______,     XXXXXXX,  XXXXXXX,  _______,  KC_BRID,  KC_BRIU,  _______,  KC_ENT,
     XXXXXXX,     XXXXXXX,     XXXXXXX,     _______,     _______,     XXXXXXX,  XXXXXXX,  _______,  _______,  XXXXXXX,  XXXXXXX,  QK_BOOT
 ),
 
