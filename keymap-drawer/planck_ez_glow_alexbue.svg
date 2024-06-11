@@ -155,6 +155,22 @@ path.combo {
     visibility: hidden;
 }
 /* End Tabler Icons Cleanup */
+
+svg.keymap {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 14px;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
+    fill: #24292e;
+}
+
+rect {
+    fill: #f6f8fa;
+}
+
+.held {
+    fill: #fdd;
+}
 </style>
 <g transform="translate(30, 0)" class="layer-L0">
 <text x="0" y="28" class="label">L0:</text>
