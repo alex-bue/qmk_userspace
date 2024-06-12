@@ -1,6 +1,6 @@
 draw_config:
-  key_w: 55
-  key_h: 45
+  key_w: 65
+  key_h: 55
 
   # split_gap: 30.0
 
@@ -21,8 +21,8 @@ draw_config:
   small_pad: 4
 
   # padding between keys
-  inner_pad_w: 10
-  inner_pad_h: 10
+  inner_pad_w: 5
+  inner_pad_h: 5
 
   # padding between layers
   outer_pad_w: 30.0
