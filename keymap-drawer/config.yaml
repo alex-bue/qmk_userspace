@@ -51,7 +51,7 @@ draw_config:
   glyph_shifted_size: 18
   glyphs: {}
 
-  svg_extra_style:
+  # svg_extra_style:
 
 parse_config:
   preprocess: true
