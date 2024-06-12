@@ -56,8 +56,6 @@ draw_config:
         fill: #f6f8fa;
         stroke: none;      /* Remove border */
         stroke-width: 0;   /* Border width */
-        width: 55px;
-        height: 45px;
     }
 
     rect.key, rect.combo {
