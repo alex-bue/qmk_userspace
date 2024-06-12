@@ -62,10 +62,10 @@ layers:
   - (
   - )
   - +
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-shift$$
+  - LCTL
+  - LALT
+  - LGUI
+  - LSFT
   - ^
   - ''
   - ''
@@ -111,17 +111,17 @@ layers:
   - VOLU
   - MNXT
   - MUTE
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-shift$$
+  - LCTL
+  - LALT
+  - LGUI
+  - LSFT
   - {t: ▽, type: trans}
   - ''
   - ''
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
+  - LEFT
+  - DOWN
+  - UP
+  - RGHT
   - MPLY
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -160,18 +160,18 @@ layers:
   - '8'
   - '9'
   - '0'
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-shift$$
+  - LCTL
+  - LALT
+  - LGUI
+  - LSFT
   - {t: ▽, type: trans}
   - ''
   - ''
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - LSFT
+  - LGUI
+  - LALT
+  - LCTL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

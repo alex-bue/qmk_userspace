@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: planck/ez/glow, qmk_layout: LAYOUT_ortho_4x12}
 layers:
   L0:
-  - $$mdi:keyboard-tab$$
+  - TAB
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - BSPC
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
@@ -25,7 +25,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - LSFT
   - Z
   - X
   - C
@@ -36,18 +36,18 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: enter, h: shift}
   - FN
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
+  - LCTL
+  - LALT
+  - LGUI
   - {t: '$$mdi:backspace$$', h: LOWER}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-return$$', h: RAISE}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - RGUI
+  - RALT
+  - RCTL
   - NAV
   L1:
   - {t: ▽, type: trans}
@@ -61,17 +61,17 @@ layers:
   - VOLU
   - MNXT
   - MUTE
-  - $$mdi:backspace-reverse-outline$$
+  - DEL
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
+  - LGUI
+  - LALT
+  - LSFT
+  - LCTL
   - {t: ▽, type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
+  - LEFT
+  - DOWN
+  - UP
+  - RGHT
   - MPLY
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
