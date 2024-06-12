@@ -95,31 +95,47 @@ parse_config:
       tap: $$mdi:keyboard-esc$$
       hold: $$mdi:apple-keyboard-control$$
 
+    "LT(LA_NAV, KC_TAB)":
+        tap: 'tab'
+        hold: 'nav'
+
+    "LT(LA_SYM, KC_ESC)":
+        tap: 'esc'
+        hold: 'sym'
+
+    "LT(LA_NUM, KC_SPC)":
+        tap: 'space'
+        hold: 'num'
+
+    "LT(LA_NAV, KC_ENT)":
+        tap: 'enter'
+        hold: 'nav'
+
     "HOME_A":
-      tap: A
-      hold: LCTL
+      tap: 'A'
+      hold: 'ctrl'
     "HOME_S":
-      tap: S
-      hold: LALT
+      tap: 'S'
+      hold: 'alt'
     "HOME_D":
-      tap: D
-      hold: LGUI
+      tap: 'D'
+      hold: 'gui'
     "HOME_F":
-      tap: F
-      hold: LSFT
+      tap: 'F'
+      hold: 'shift'
 
     "HOME_J":
-      tap: J
-      hold: LSFT
+      tap: 'J'
+      hold: 'shift'
     "HOME_K":
-      tap: K
-      hold: LGUI
+      tap: 'K'
+      hold: 'gui'
     "HOME_L":
-      tap: L
-      hold: LALT
+      tap: 'L'
+      hold: 'alt'
     "HOME_QUOT":
-      tap: QUOT
-      hold: LCTL
+      tap: "''"
+      hold: 'ctrl'
 
 
   qmk_remove_keycode_prefix:
@@ -150,12 +166,16 @@ parse_config:
     # RGHT: $$mdi:arrow-right-bold$$
 
     # Whitespace
+    ENTER: 'enter'
+    ENT: 'enter'
     # ENTER:
     #   type: enter
     #   tap: $$mdi:keyboard-return$$
     # ESC: $$mdi:keyboard-esc$$
     # TAB: $$mdi:keyboard-tab$$
     # LS(TAB): $$mdi:keyboard-tab-reverse$$
+    SPC: 'space'
+    SPACE: 'space'
     # SPC:
     #   type: space
     #   tap:  $$mdi:keyboard-space$$
@@ -174,62 +194,49 @@ parse_config:
 
     # Space cadets
     SENT:
-      tap: enter
-      hold: shift
+      tap: 'enter'
+      hold: 'shift'
 
     XXXXXXX: ''
     'NO': ''
     MINUS:
       tap: "-"
-      shifted: "_"
     MINS: '-'
     EQUAL:
       tap: "="
-      shifted: "+"
     EQL:
       tap: "="
-      shifted: "+"
     LEFT_BRACKET: '['
     LBRC:
       tap: "["
-      shifted: "{"
     RIGHT_BRACKET: ']'
     RBRC:
       tap: "]"
-      shifted: "}"
     BACKSLASH: \
     BLSH:
       tap: '\'
-      shifted: "|"
     BSLS: \
     NONUS_HASH: '#'
     NUHS: '#'
     SEMICOLON: ;
     SEMI:
       tap: ";"
-      shifted: ":"
     SCLN:
       tap: ";"
-      shifted: ":"
     QUOTE: ''''
     QUOT:
       tap: "'"
-      shifted: '"'
     GRAVE: '`'
     GRV: '`'
     COMMA: ','
     COMM:
       tap: ","
-      shifted: "<"
     DOT:
       tap: "."
-      shifted: ">"
     SLASH:
       tap: "/"
-      shifted: "?"
     SLSH:
       tap: "/"
-      shifted: "?"
     TILDE: '~'
     TILD: '~'
     EXCLAIM: '!'
