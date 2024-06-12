@@ -9,8 +9,8 @@ draw_config:
   combo_h: 26.0
 
   # key border radius
-  key_rx: 12
-  key_ry: 12
+  key_rx: 8
+  key_ry: 8
 
   dark_mode: false
   n_columns: 1
@@ -56,11 +56,19 @@ draw_config:
         fill: #f6f8fa;
         stroke: none;      /* Remove border */
         stroke-width: 0;   /* Border width */
+        width: 55px;
+        height: 45px;
     }
 
     rect.key, rect.combo {
         stroke: none;
         stroke-width: 0;
+    }
+
+    text {
+        text-anchor: middle;
+        dominant-baseline: middle;
+        text-transform: lowercase;
     }
 
 parse_config:
