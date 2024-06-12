@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - LSFT
+  - shift
   - Z
   - X
   - C
@@ -38,16 +38,16 @@ layers:
   - /
   - {t: enter, h: shift}
   - FN
-  - LCTL
-  - LALT
-  - LGUI
+  - ctrl
+  - alt
+  - gui
   - {t: '$$mdi:backspace$$', h: LOWER}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-return$$', h: RAISE}
-  - RGUI
-  - RALT
-  - RCTL
+  - gui
+  - ralt
+  - ctrl
   - NAV
   L1:
   - {t: ▽, type: trans}
@@ -63,10 +63,10 @@ layers:
   - MUTE
   - DEL
   - {t: ▽, type: trans}
-  - LGUI
-  - LALT
-  - LSFT
-  - LCTL
+  - gui
+  - alt
+  - shift
+  - ctrl
   - {t: ▽, type: trans}
   - LEFT
   - DOWN

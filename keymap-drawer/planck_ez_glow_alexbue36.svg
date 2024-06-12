@@ -377,19 +377,19 @@ text {
 </g>
 <g transform="translate(28, 82)" class="key keypos-12">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LCTL</text>
+<text x="0" y="0" class="key tap">ctrl</text>
 </g>
 <g transform="translate(82, 82)" class="key keypos-13">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LALT</text>
+<text x="0" y="0" class="key tap">alt</text>
 </g>
 <g transform="translate(138, 82)" class="key keypos-14">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LGUI</text>
+<text x="0" y="0" class="key tap">gui</text>
 </g>
 <g transform="translate(192, 82)" class="key keypos-15">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LSFT</text>
+<text x="0" y="0" class="key tap">shift</text>
 </g>
 <g transform="translate(248, 82)" class="key keypos-16">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
@@ -570,19 +570,19 @@ text {
 </g>
 <g transform="translate(28, 82)" class="key keypos-12">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LCTL</text>
+<text x="0" y="0" class="key tap">ctrl</text>
 </g>
 <g transform="translate(82, 82)" class="key keypos-13">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LALT</text>
+<text x="0" y="0" class="key tap">alt</text>
 </g>
 <g transform="translate(138, 82)" class="key keypos-14">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LGUI</text>
+<text x="0" y="0" class="key tap">gui</text>
 </g>
 <g transform="translate(192, 82)" class="key keypos-15">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LSFT</text>
+<text x="0" y="0" class="key tap">shift</text>
 </g>
 <g transform="translate(248, 82)" class="key trans keypos-16">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key trans"/>
@@ -756,19 +756,19 @@ text {
 </g>
 <g transform="translate(28, 82)" class="key keypos-12">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LCTL</text>
+<text x="0" y="0" class="key tap">ctrl</text>
 </g>
 <g transform="translate(82, 82)" class="key keypos-13">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LALT</text>
+<text x="0" y="0" class="key tap">alt</text>
 </g>
 <g transform="translate(138, 82)" class="key keypos-14">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LGUI</text>
+<text x="0" y="0" class="key tap">gui</text>
 </g>
 <g transform="translate(192, 82)" class="key keypos-15">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LSFT</text>
+<text x="0" y="0" class="key tap">shift</text>
 </g>
 <g transform="translate(248, 82)" class="key trans keypos-16">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key trans"/>
@@ -786,19 +786,19 @@ text {
 </g>
 <g transform="translate(468, 82)" class="key keypos-20">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LSFT</text>
+<text x="0" y="0" class="key tap">shift</text>
 </g>
 <g transform="translate(522, 82)" class="key keypos-21">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LGUI</text>
+<text x="0" y="0" class="key tap">gui</text>
 </g>
 <g transform="translate(578, 82)" class="key keypos-22">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LALT</text>
+<text x="0" y="0" class="key tap">alt</text>
 </g>
 <g transform="translate(632, 82)" class="key keypos-23">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key"/>
-<text x="0" y="0" class="key tap">LCTL</text>
+<text x="0" y="0" class="key tap">ctrl</text>
 </g>
 <g transform="translate(28, 138)" class="key trans keypos-24">
 <rect rx="8" ry="8" x="-22" y="-22" width="45" height="45" class="key trans"/>

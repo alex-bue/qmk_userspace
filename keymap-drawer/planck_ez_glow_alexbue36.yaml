@@ -62,10 +62,10 @@ layers:
   - (
   - )
   - +
-  - LCTL
-  - LALT
-  - LGUI
-  - LSFT
+  - ctrl
+  - alt
+  - gui
+  - shift
   - ^
   - ''
   - ''
@@ -111,10 +111,10 @@ layers:
   - VOLU
   - MNXT
   - MUTE
-  - LCTL
-  - LALT
-  - LGUI
-  - LSFT
+  - ctrl
+  - alt
+  - gui
+  - shift
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -160,18 +160,18 @@ layers:
   - '8'
   - '9'
   - '0'
-  - LCTL
-  - LALT
-  - LGUI
-  - LSFT
+  - ctrl
+  - alt
+  - gui
+  - shift
   - {t: ▽, type: trans}
   - ''
   - ''
   - {t: ▽, type: trans}
-  - LSFT
-  - LGUI
-  - LALT
-  - LCTL
+  - shift
+  - gui
+  - alt
+  - ctrl
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
