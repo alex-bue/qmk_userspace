@@ -21,8 +21,8 @@ draw_config:
   small_pad: 4
 
   # padding between keys
-  inner_pad_w: 5
-  inner_pad_h: 5
+  inner_pad_w: 4
+  inner_pad_h: 4
 
   # padding between layers
   outer_pad_w: 30.0
@@ -103,12 +103,12 @@ parse_config:
         tap: 'esc'
         hold: 'sym'
 
-    "LT(LA_NUM, KC_SPC)":
-        tap: 'space'
+    "LT(LA_NUM, KC_ENT)":
+        tap: 'enter'
         hold: 'num'
 
-    "LT(LA_NAV, KC_ENT)":
-        tap: 'enter'
+    "LT(LA_NAV, KC_SPC)":
+        tap: 'space'
         hold: 'nav'
 
     "HOME_A":
@@ -235,7 +235,7 @@ parse_config:
       tap: ";"
     SCLN:
       tap: ";"
-    QUOTE: ''''
+    QUOTE: "'"
     QUOT:
       tap: "'"
     GRAVE: '`'
