@@ -95,6 +95,32 @@ parse_config:
       tap: $$mdi:keyboard-esc$$
       hold: $$mdi:apple-keyboard-control$$
 
+    "HOME_A":
+      tap: A
+      hold: LCTL
+    "HOME_S":
+      tap: S
+      hold: LALT
+    "HOME_D":
+      tap: D
+      hold: LGUI
+    "HOME_F":
+      tap: F
+      hold: LSFT
+
+    "HOME_J":
+      tap: J
+      hold: LSFT
+    "HOME_K":
+      tap: K
+      hold: LGUI
+    "HOME_L":
+      tap: L
+      hold: LALT
+    "HOME_QUOT":
+      tap: QUOT
+      hold: LCTL
+
 
   qmk_remove_keycode_prefix:
   - KC_
