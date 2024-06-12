@@ -13,18 +13,18 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LCTL}
-  - {t: S, h: LALT}
-  - {t: D, h: LGUI}
-  - {t: F, h: LSFT}
+  - {t: A, h: ctrl}
+  - {t: S, h: alt}
+  - {t: D, h: gui}
+  - {t: F, h: shift}
   - G
   - ''
   - ''
   - H
-  - {t: J, h: LSFT}
-  - {t: K, h: LGUI}
-  - {t: L, h: LALT}
-  - {t: QUOT, h: LCTL}
+  - {t: J, h: shift}
+  - {t: K, h: gui}
+  - {t: L, h: alt}
+  - {t: '''''', h: ctrl}
   - {t: Z, h: RALT}
   - X
   - C
@@ -34,18 +34,18 @@ layers:
   - ''
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, h: RALT, s: '?'}
+  - ','
+  - .
+  - {t: /, h: RALT}
   - ''
   - ''
   - ''
-  - LT(LA NAV, TAB)
-  - LT(LA SYM, ESC)
+  - {t: tab, h: nav}
+  - {t: esc, h: sym}
   - ''
   - ''
-  - LT(LA NUM, SPC)
-  - LT(LA NAV, ENT)
+  - {t: space, h: num}
+  - {t: enter, h: nav}
   - ''
   - ''
   - ''
@@ -57,7 +57,7 @@ layers:
   - '%'
   - ''
   - ''
-  - {t: '=', s: +}
+  - '='
   - '`'
   - (
   - )
@@ -71,8 +71,8 @@ layers:
   - ''
   - '*'
   - ':'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - '['
+  - ']'
   - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -82,7 +82,7 @@ layers:
   - ''
   - ''
   - '~'
-  - {t: ;, s: ':'}
+  - ;
   - '{'
   - '}'
   - _
@@ -134,7 +134,7 @@ layers:
   - BRID
   - BRIU
   - {t: ▽, type: trans}
-  - ENT
+  - enter
   - ''
   - ''
   - ''

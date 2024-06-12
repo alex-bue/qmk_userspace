@@ -23,8 +23,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - ;
+  - ''''
   - LSFT
   - Z
   - X
@@ -33,9 +33,9 @@ layers:
   - B
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - ','
+  - .
+  - /
   - {t: enter, h: shift}
   - FN
   - LCTL
@@ -119,9 +119,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '-'
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - '='
+  - '['
+  - ']'
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
