@@ -13,18 +13,18 @@ layers:
   - I
   - O
   - P
-  - HOME A
-  - HOME S
-  - HOME D
-  - HOME F
+  - {t: A, h: LCTL}
+  - {t: S, h: LALT}
+  - {t: D, h: LGUI}
+  - {t: F, h: LSFT}
   - G
   - ''
   - ''
   - H
-  - HOME J
-  - HOME K
-  - HOME L
-  - HOME QUOT
+  - {t: J, h: LSFT}
+  - {t: K, h: LGUI}
+  - {t: L, h: LALT}
+  - {t: QUOT, h: LCTL}
   - {t: Z, h: RALT}
   - X
   - C
