@@ -9,8 +9,8 @@ draw_config:
   combo_h: 36.0
 
   # key border radius
-  key_rx: 8
-  key_ry: 8
+  key_rx: 16
+  key_ry: 16
 
   dark_mode: false
   n_columns: 1

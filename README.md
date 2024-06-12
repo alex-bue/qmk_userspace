@@ -6,7 +6,7 @@ This is a template repository which allows for an external set of QMK keymaps to
 
 Automatically generated with [keymap-drawer](https://github.com/caksoylar/keymap-drawer) using Github workflows.
 
-![planck-layout](./keymap-drawer/planck_ez_glow_alexbue.svg) 
+![planck-layout](./keymap-drawer/planck_ez_glow_alexbue36.svg) 
 
 
 
