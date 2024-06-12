@@ -1,16 +1,16 @@
 draw_config:
-  key_w: 60.0
-  key_h: 80
+  key_w: 55
+  key_h: 45
 
   # split_gap: 30.0
 
   # combo box dimensions
-  combo_w: 36.0
-  combo_h: 36.0
+  combo_w: 28.0
+  combo_h: 26.0
 
   # key border radius
-  key_rx: 16
-  key_ry: 16
+  key_rx: 12
+  key_ry: 12
 
   dark_mode: false
   n_columns: 1
@@ -46,12 +46,22 @@ draw_config:
 
   # footer_text: ''
   shrink_wide_legends: 5
-  glyph_tap_size: 26
-  glyph_hold_size: 18
-  glyph_shifted_size: 18
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
   glyphs: {}
 
-  # svg_extra_style:
+  svg_extra_style: |
+    rect.key {
+        fill: #f6f8fa;
+        stroke: none;      /* Remove border */
+        stroke-width: 0;   /* Border width */
+    }
+
+    rect.key, rect.combo {
+        stroke: none;
+        stroke-width: 0;
+    }
 
 parse_config:
   preprocess: true
