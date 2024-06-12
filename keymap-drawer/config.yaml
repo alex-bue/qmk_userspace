@@ -145,18 +145,18 @@ parse_config:
   # QMK
   qmk_keycode_map:
     # modifiers
-    "KC_LCTRL": 'ctrl'
-    "KC_LCTL": 'ctrl'
-    "KC_LALT": 'alt'
-    "KC_LSFT": 'shift'
-    "KC_LGUI": 'gui'
-    "KC_LCMD": 'cmd'
-    "KC_RCTRL": 'ctrl'
-    "KC_RCTL": 'ctrl'
-    "KC_RALT": 'alt'
-    "KC_RSFT": 'shift'
-    "KC_RGUI": 'gui'
-    "KC_RCMD": 'cmd'
+    LCTRL: 'ctrl'
+    LCTL: 'ctrl'
+    LALT: 'alt'
+    LSFT: 'shift'
+    LGUI: 'gui'
+    LCMD: 'cmd'
+    RCTRL: 'ctrl'
+    RCTL: 'ctrl'
+    RALT: 'ralt'
+    RSFT: 'shift'
+    RGUI: 'gui'
+    RCMD: 'cmd'
     # LCTRL: $$mdi:apple-keyboard-control$$
     # LCTL: $$mdi:apple-keyboard-control$$
     # LALT: $$mdi:apple-keyboard-option$$
