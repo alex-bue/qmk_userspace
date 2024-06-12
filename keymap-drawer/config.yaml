@@ -129,53 +129,53 @@ parse_config:
   # QMK
   qmk_keycode_map:
     # modifiers
-    LCTRL: $$mdi:apple-keyboard-control$$
-    LCTL: $$mdi:apple-keyboard-control$$
-    LALT: $$mdi:apple-keyboard-option$$
-    LSFT: $$mdi:apple-keyboard-shift$$
-    LGUI: $$mdi:apple-keyboard-command$$
-    LCMD: $$mdi:apple-keyboard-command$$
-
-    RCTRL: $$mdi:apple-keyboard-control$$
-    RCTL: $$mdi:apple-keyboard-control$$
-    RALT: $$mdi:apple-keyboard-option$$
-    RSFT: $$mdi:apple-keyboard-shift$$
-    RGUI: $$mdi:apple-keyboard-command$$
-    RCMD: $$mdi:apple-keyboard-command$$
+    # LCTRL: $$mdi:apple-keyboard-control$$
+    # LCTL: $$mdi:apple-keyboard-control$$
+    # LALT: $$mdi:apple-keyboard-option$$
+    # LSFT: $$mdi:apple-keyboard-shift$$
+    # LGUI: $$mdi:apple-keyboard-command$$
+    # LCMD: $$mdi:apple-keyboard-command$$
+    #
+    # RCTRL: $$mdi:apple-keyboard-control$$
+    # RCTL: $$mdi:apple-keyboard-control$$
+    # RALT: $$mdi:apple-keyboard-option$$
+    # RSFT: $$mdi:apple-keyboard-shift$$
+    # RGUI: $$mdi:apple-keyboard-command$$
+    # RCMD: $$mdi:apple-keyboard-command$$
 
     # arrows
-    UP: $$mdi:arrow-up-bold$$
-    DOWN: $$mdi:arrow-down-bold$$
-    LEFT: $$mdi:arrow-left-bold$$
-    RGHT: $$mdi:arrow-right-bold$$
+    # UP: $$mdi:arrow-up-bold$$
+    # DOWN: $$mdi:arrow-down-bold$$
+    # LEFT: $$mdi:arrow-left-bold$$
+    # RGHT: $$mdi:arrow-right-bold$$
 
     # Whitespace
-    ENTER:
-      type: enter
-      tap: $$mdi:keyboard-return$$
-    ESC: $$mdi:keyboard-esc$$
-    TAB: $$mdi:keyboard-tab$$
-    LS(TAB): $$mdi:keyboard-tab-reverse$$
-    SPC:
-      type: space
-      tap:  $$mdi:keyboard-space$$
-    BACKSPACE:
-      type: backspace
-      tap: $$mdi:backspace$$
-    BSPC:
-      type: backspace
-      tap: $$mdi:backspace$$
-    DELETE: $$mdi:backspace-reverse-outline$$
-    DEL: $$mdi:backspace-reverse-outline$$
+    # ENTER:
+    #   type: enter
+    #   tap: $$mdi:keyboard-return$$
+    # ESC: $$mdi:keyboard-esc$$
+    # TAB: $$mdi:keyboard-tab$$
+    # LS(TAB): $$mdi:keyboard-tab-reverse$$
+    # SPC:
+    #   type: space
+    #   tap:  $$mdi:keyboard-space$$
+    # BACKSPACE:
+    #   type: backspace
+    #   tap: $$mdi:backspace$$
+    # BSPC:
+    #   type: backspace
+    #   tap: $$mdi:backspace$$
+    # DELETE: $$mdi:backspace-reverse-outline$$
+    # DEL: $$mdi:backspace-reverse-outline$$
 
     # Locks
-    CAPSLOCK: $$mdi:apple-keyboard-caps$$
-    CAPS: $$mdi:apple-keyboard-caps$$
+    # CAPSLOCK: $$mdi:apple-keyboard-caps$$
+    # CAPS: $$mdi:apple-keyboard-caps$$
 
     # Space cadets
     SENT:
-      tap: $$mdi:keyboard-return$$
-      hold: $$mdi:apple-keyboard-shift$$
+      tap: enter
+      hold: shift
 
     XXXXXXX: ''
     'NO': ''
