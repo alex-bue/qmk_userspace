@@ -44,8 +44,8 @@ layers:
   - {t: esc, h: sym}
   - ''
   - ''
-  - {t: space, h: num}
-  - {t: enter, h: nav}
+  - {t: enter, h: num}
+  - {t: space, h: nav}
   - ''
   - ''
   - ''
