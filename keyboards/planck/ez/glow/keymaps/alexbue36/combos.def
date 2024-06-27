@@ -2,10 +2,13 @@
 
 // Right hand
 COMB(IO_BSPC,       KC_BSPC,  KC_I, KC_O)
-COMB(KL_DEL,        KC_DEL,   RGUI_T(KC_K), LALT_T(KC_L))
+COMB(KL_DEL,        KC_DEL,   LGUI_T(KC_K), LALT_T(KC_L))
 COMB(COMM_DOT_ENT,  KC_ENT,   KC_COMM, KC_DOT)
 
 // Left hand
-COMB(WE_TAB,        KC_TAB,   KC_W, KC_E)
-COMB(SD_ESC,        KC_ESC,   LALT_T(KC_S), LGUI_T(KC_D))
+COMB(WE_TAB,        KC_TAB,           KC_W, KC_E)
+COMB(SD_ESC,        KC_ESC,           LALT_T(KC_S), LGUI_T(KC_D))
+COMB(SDF_ALFRED,    LGUI(KC_SPC),     LALT_T(KC_S), LGUI_T(KC_D), LSFT_T(KC_F))
 
+// Both hands
+COMB(FJ_CAPSWORD,   CW_TOGG,          LSFT_T(KC_F), LSFT_T(KC_J))
