@@ -8,9 +8,8 @@ By Alex
 enum planck_layers {
   _QWERTY,
   _NAVIGATION,
-  _LOWER,
-  _RAISE,
-  _FN,
+  _SYM,
+  _NUM,
   _ADJUST
 };
 
@@ -21,47 +20,40 @@ enum planck_keycodes {
   NOCT                  // For Nocture Op 9 1
 };
 
-#define LOWER LT(_LOWER, KC_BSPC)       // Lower layer on hold, backspace on tap
-#define RAISE LT(_RAISE, KC_ENTER)      // Raise layer on hold, enter on tap
+#define SYM LT(_SYM, KC_ESC)       // Lower layer on hold, backspace on tap
+#define NUM LT(_NUM, KC_ENTER)      // Raise layer on hold, enter on tap
 #define NAVSPC LT(_NAVIGATION, KC_SPC) // Navigation layer on hold, tap on space
-#define NAV MO(_NAVIGATION)             // Alias for navigation layer
-#define FN MO(_FN)             // Alias for navigation layer
+#define NAVTAB LT(_NAVIGATION, KC_TAB) // Alias for navigation layer
+#define NAV MO(_NAVIGATION) // Alias for navigation layer
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_QWERTY] = LAYOUT_ortho_4x12(
-    KC_TAB,          KC_Q,     KC_W,     KC_E,     KC_R,   KC_T,     KC_Y,     KC_U,   KC_I,     KC_O,     KC_P,     KC_BSPC,
-    LCTL_T(KC_ESC),  KC_A,     KC_S,     KC_D,     KC_F,   KC_G,     KC_H,     KC_J,   KC_K,     KC_L,     KC_SCLN,  KC_QUOT,
-    KC_LSFT,         KC_Z,     KC_X,     KC_C,     KC_V,   KC_B,     KC_N,     KC_M,   KC_COMM,  KC_DOT,   KC_SLSH,  SC_SENT,
-    FN, KC_LCTL,  KC_LALT, KC_LGUI  ,  LOWER,  NAVSPC,  NAVSPC,  RAISE, KC_RGUI, KC_RALT, KC_RCTL, NAV
+    KC_TAB,          KC_Q,     KC_W,     KC_E,     KC_R,   KC_T,     KC_Y,     KC_U,  KC_I,     KC_O,     KC_P,     KC_BSPC,
+    LCTL_T(KC_ESC),  KC_A,     KC_S,     KC_D,     KC_F,   KC_G,     KC_H,     KC_J,  KC_K,     KC_L,     KC_SCLN,  KC_QUOT,
+    KC_LSFT,         KC_Z,     KC_X,     KC_C,     KC_V,   KC_B,     KC_N,     KC_M,  KC_COMM,  KC_DOT,   KC_SLSH,  SC_SENT,
+    NAV, KC_LCTL,    KC_LALT,  KC_LGUI,  SYM,  NAVSPC, NAVSPC,       NUM,  KC_RGUI,  KC_RALT, KC_RCTL, NAV
 ),
 
 [_NAVIGATION] = LAYOUT_ortho_4x12(
-    _______,  LALT(KC_1),  LALT(KC_2),  LALT(KC_3),  LALT(KC_4),  LALT(KC_5),  KC_MPRV,  KC_VOLD,  KC_VOLU,  KC_MNXT,  KC_MUTE,  KC_DEL,
-    _______,  KC_LGUI,     KC_LALT,     KC_LSFT,    KC_LCTL,     _______,     KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_MPLY,  _______,
+    _______,  LALT(KC_1),  LALT(KC_2),  LALT(KC_3),  LALT(KC_4),  LALT(KC_5), KC_MPRV,  KC_VOLD,  KC_VOLU,  KC_MNXT,  KC_MUTE,  KC_DEL,
+    _______,  KC_LCTL,     KC_LALT,     KC_LGUI,    KC_LSFT,     _______,     KC_LEFT,  KC_DOWN,  KC_UP,    KC_RGHT,  KC_MPLY,  _______,
     _______,  _______,     _______,     _______,    _______,     _______,     _______,  KC_BRID, KC_BRIU,  _______,  _______,  _______,
     _______,  _______,     _______,     _______,    _______,     _______,     _______,  _______,  _______,  _______,  _______,  _______
 ),
 
-[_LOWER] = LAYOUT_ortho_4x12(
+[_SYM] = LAYOUT_ortho_4x12(
     KC_TILDE, KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,  KC_CIRC,  KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RPRN,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_MINS,  KC_EQL,   KC_LBRC,  KC_RBRC,  KC_BSLS,
+    _______,  KC_LCTL,  KC_LALT,  KC_LGUI,  KC_LSFT,  _______,  _______,  KC_MINS,  KC_EQL,   KC_LBRC,  KC_RBRC,  KC_BSLS,
     _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_UNDS,  KC_PLUS,  _______,  _______,  _______,
     _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______
 ),
 
-[_RAISE] = LAYOUT_ortho_4x12(
+[_NUM] = LAYOUT_ortho_4x12(
     KC_GRV,   KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_4,     KC_5,     KC_6,     _______,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_1,     KC_2,     KC_3,     _______,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_0,     _______,  _______,  _______,  _______
-),
-
-[_FN] = LAYOUT_ortho_4x12(
-    _______,  KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,     KC_F8,    KC_F9,    _______,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_F4,     KC_F5,    KC_F6,    _______,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_F1,     KC_F2,    KC_F3,    _______,  _______,
-    _______,  _______,  _______,  _______,  _______,  _______,  _______,  KC_F10,    KC_F11,   KC_F12,   _______,  _______
+    _______,  KC_LCTL,  KC_LALT,  KC_LGUI,  KC_LSFT,  _______,  _______,  KC_LSFT,  KC_LGUI,  KC_LALT,  KC_LCTL,  _______,
+    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,   _______, _______,  _______,  _______,
+    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,     _______,  _______,  _______,  _______
 ),
 
 [_ADJUST] = LAYOUT_ortho_4x12(
@@ -79,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 #endif
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-  return update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
+  return update_tri_layer_state(state, _SYM, _NUM, _ADJUST);
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
