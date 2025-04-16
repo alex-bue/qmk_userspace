@@ -24,7 +24,7 @@ enum planck_keycodes {
 
 #define SYM LT(_SYM, KC_ENTER)       // Lower layer on hold, backspace on tap
 #define NUM_V LT(_NUM, KC_V)          // Raise layer on hold, enter on tap
-#define NAV_UNDS LT(_NAVIGATION, KC_SPC) // Navigation layer on hold, tap on space
+#define NAV_UNDS LT(_NAVIGATION, KC_UNDS) // Navigation layer on hold, tap on space
 #define NAV_TAB LT(_NAVIGATION, KC_TAB) // Alias for navigation layer
 #define FN_SPC LT(_FN, KC_SPC) // Alias for navigation layer
 #define NAV MO(_NAVIGATION) // Alias for navigation layer
