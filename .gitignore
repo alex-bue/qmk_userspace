@@ -12,3 +12,8 @@
 
 # Virtual envs
 venv
+
+# clangd
+compile_commands.json
+.clangd/
+.cache/
