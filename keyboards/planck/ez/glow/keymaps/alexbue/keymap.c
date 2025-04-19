@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,          KC_Q,     KC_W,     KC_E,      KC_R,     KC_T,     KC_Y,     KC_U,     KC_I,        KC_O,     KC_P,     KC_BSPC,
     LCTL_T(KC_ESC),  KC_A,     KC_S,     KC_D,      KC_F,     KC_G,     KC_H,     KC_J,     KC_K,        KC_L,     KC_SCLN,  LCTL_T(KC_QUOT),
     KC_LSFT,         KC_Z,     KC_X,     KC_C,      NUM_V,    KC_B,   KC_N,     KC_M,     KC_COMM,     KC_DOT,   KC_SLSH,  SC_SENT,
-    NAV, KC_LCTL,    KC_LALT,  KC_LGUI,  NAV_UNDS,  FN_SPC,   FN_SPC,   SYM,      KC_RGUI,  KC_RALT,  KC_RCTL,  NAV
+    NAV, KC_LCTL,    KC_LALT,  KC_LGUI,  NAV_UNDS,  FN_SPC,   FN_SPC,   SYM,      RGUI_T(KC_LEFT),  RALT_T(KC_DOWN),  RCTL(KC_UP),  MT(NAV, KC_RIGHT)
 ),
 
 [_NAVIGATION] = LAYOUT_ortho_4x12(
